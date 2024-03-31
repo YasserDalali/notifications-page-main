@@ -50,21 +50,24 @@ function createNewNot() {
     timestamp.innerHTML = messages[rx].timestamp
 
     let notification = document.createElement('div')
-    let unreaddot = '<i class="fa fa-circle" aria-hidden="true" style="color: hsl(1, 90%, 64%); scale: 0.8; margin-left: 5px;"></i>'
+    let unreaddot = document.createElement('i')
+    unreaddot.classList.add('fa', 'fa-circle')
+
 
     notification.classList.add('notification', 'unread')
     timestamp.classList.add('date')
     
         message.appendChild(username)
 
+        message.appendChild(unreaddot)
+
     let text = document.createElement('div')
     text.innerHTML = message.outerHTML+timestamp.outerHTML
     text.classList.add('message')
-
+    
     notification.innerHTML = `${profile.outerHTML} ${text.outerHTML}`
 
 
-    notification.classList.add('rotateAnim')
     document.body.appendChild(notification);
 }
 
