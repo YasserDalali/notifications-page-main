@@ -1,46 +1,61 @@
+/*! Import the Plus Jakarta Sans font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+/*! Apply styles to the body */
 body {
-  background-color: rgb(255, 255, 255);
-  font-family: Plus Jakarta Sans;
+  background-color: rgb(255, 255, 255); /* Set the background color to white */
+  font-family: Plus Jakarta Sans; /* Use the Plus Jakarta Sans font for the text */
 }
+
+/** Styles for notification elements */
 .notification {
-  scale: 1.3;
-  gap: 2rem;
-  display: flex;
-  border-radius: 15px;
-  padding: .6rem;
-  background-color: hsl(210, 60%, 98%);
-  align-items: center;
-  width: 50%;
-  margin: 50px auto;
-
-
+  scale: 1.3; /* Scale the notification */
+  gap: 2rem; /* Set the gap between elements */
+  display: flex; /* Use flexbox for layout */
+  border-radius: 15px; /* Rounded corners */
+  padding: .6rem; /* Add padding */
+  background-color: hsl(210, 60%, 98%); /* Light gray background */
+  align-items: center; /* Center the items vertically */
+  width: 50%; /* Set the width to 50% of the parent */
+  margin: 50px auto; /* Center the notification horizontally */
 }
 
-
+/*? Styles for paragraphs inside notifications */
 .notification p {
-  color: rgb(102, 102, 102);
+  color: rgb(102, 102, 102); /* Set text color to gray */
 }
 
+/*? Styles for spans inside notifications */
 .notification span {
-  font-weight: bolder;
-  color: black;
+  font-weight: bolder; /* Make the text bold */
+  color: black; /* Set text color to black */
 }
+
+/** Hover effect for spans inside notifications */
 .notification span:hover {
-  color: hsl(219, 85%, 26%);
-  cursor: pointer;
+  color: hsl(219, 85%, 26%); /* Change text color on hover */
+  cursor: pointer; /* Show pointer cursor on hover */
 }
 
+/** Styles for the timestamp */
 .time {
-  color: rgba(185, 185, 185, 0.39);
+  color: rgba(185, 185, 185, 0.39); /* Set text color to light gray */
 }
 
+/*! Styles for unread notifications */
 .unread {
-  background-color: hsl(205, 33%, 90%);
+  background-color: hsl(205, 33%, 90%); /* Light gray background for unread notifications */
 }
 
-.notification i {display: none;
-  color: hsl(1, 90%, 64%); scale: 0.8; margin-left: 5px;}
+/*! Styles for the circle icon */
+.notification i {
+  display: none; /* Hide the icon by default */
+  color: hsl(1, 90%, 64%); /* Set icon color */
+  scale: 0.8; /* Scale the icon */
+  margin-left: 5px; /* Add left margin */
+}
 
-.notification.unread i {display: inline;}
+/*TODO Display the icon for unread notifications */
+.notification.unread i {
+  display: inline; /* Show the icon for unread notifications */
+}
