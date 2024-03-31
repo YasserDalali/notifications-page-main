@@ -78,7 +78,8 @@ messages = [
       notification.innerHTML = `${profile.outerHTML} ${text.outerHTML}`
   
       // Append notification to the body
-      document.body.appendChild(notification);
+      var phone = document.getElementById('phone')
+      phone.appendChild(notification);
   }
   
   // Function to mark all notifications as read

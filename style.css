@@ -3,21 +3,23 @@
 
 /*! Apply styles to the body */
 body {
-  background-color: rgb(255, 255, 255); /* Set the background color to white */
+  background-color: #e9d8d0; /* Set the background color to white */
   font-family: Plus Jakarta Sans; /* Use the Plus Jakarta Sans font for the text */
+
 }
 h3 {cursor: pointer;}
+.phone-img {position: absolute; z-index: -1; top: -550px; right: -40px;}
 
 /** Styles for notification elements */
 .notification {
-  scale: 1.3; /* Scale the notification */
+scale: 1.28; /* Scale the notification */
   gap: 2rem; /* Set the gap between elements */
   display: flex; /* Use flexbox for layout */
   border-radius: 15px; /* Rounded corners */
   padding: .6rem; /* Add padding */
   background-color: hsl(210, 60%, 98%); /* Light gray background */
   align-items: center; /* Center the items vertically */
-  width: 50%; /* Set the width to 50% of the parent */
+  width: 30%; /* Set the width to 30% of the parent */
   margin: 50px auto; /* Center the notification horizontally */
 }
 
