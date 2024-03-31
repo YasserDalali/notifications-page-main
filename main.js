@@ -1,17 +1,17 @@
 messages = [
   {
     id: 1,
-    message: "You have a new friend request from.",
+    message: "You have a new friend request from ",
     timestamp: "5min ago",
   },
   {
     id: 2,
-    message: "Your post has been liked by",
+    message: "Your post has been liked by ",
     timestamp: "3min ago",
   },
   {
     id: 3,
-    message: "You have a new message from",
+    message: "You have a new message from ",
     timestamp: "1h ago",
   },
 ];
@@ -28,6 +28,8 @@ users = [
 
 
 function createNewNot() {
+    let audio = document.getElementsByTagName('audio')[0]
+    audio.play()
     let rx = Number(Math.floor(Math.random()*7));
 
     let username = document.createElement('span')
@@ -62,6 +64,23 @@ function createNewNot() {
     notification.innerHTML = `${profile.outerHTML} ${text.outerHTML}`
 
 
-
+    notification.classList.add('rotateAnim')
     document.body.appendChild(notification);
+}
+
+function readAll() {
+    var unread_msgs = []
+    unread_msgs = document.getElementsByClassName("notification")
+    for (let i=0; i < unread_msgs.length; i++) {
+        unread_msgs[i].classList.remove('unread')
+    }
+}
+
+function Delete() {
+    var unread_msgs = []
+    unread_msgs = document.getElementsByClassName("notification")
+    for (let i=0; i < unread_msgs.length; i++) {
+        document.removeChild(unread_msgs[i])
+        
+    }
 }

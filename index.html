@@ -13,21 +13,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="main.js"></script>
 </head>
-<body onclick="createNewNot()">
+<body>
+  <audio src="iphone_notification.mp3"></audio>
 
-  <div class="notification unread">
+  <h3 onclick="readAll()">Read All</h3>
+  <h3 onclick="Delete()">Remove All</h3>
 
-    <img src="images/avatar-kimberly-smith.webp" alt="" width="55px" height="55px">
-    <div class="message">
+  <h3 onclick="createNewNot()">New notification</h3>
 
-      <p><span class="username">Kimberly Smith</span> reacted to your recent post at <span>Truckers united</span>
-        
-      <i class="fa fa-circle" aria-hidden="true" style="color: hsl(1, 90%, 64%); scale: 0.8; margin-left: 5px;"></i>
-      </p>
-      <p class="time">1 min ago</p>
-
-    </div>
-
-  </div>
 </body>
 </html>
