@@ -62,3 +62,17 @@ scale: 1.28; /* Scale the notification */
 .notification.unread i {
   display: inline; /* Show the icon for unread notifications */
 }
+
+
+
+@media screen and (max-width: 1850px) {
+  #phone {background-color: white; padding: 2rem;margin: 2rem; border-radius: 20px;}
+  .notification {width: 70%;}
+  .phone-img {display: none;}
+  
+}
+
+@media screen and (max-width: 700px) {
+  .notification {width: 100%; scale: 1; margin: 10px 0;}
+  
+}
