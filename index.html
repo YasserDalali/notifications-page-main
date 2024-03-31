@@ -9,29 +9,19 @@
   <title>Frontend Mentor | Notifications page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-body {background-color: antiquewhite; font-family: Plus Jakarta Sans;}
-    .notification {display: flex; border-radius: 15px; gap:2rem; padding: 2rem; background-color: hsl(210, 60%, 98%);}
-
-    .notification p {
-      color: rgb(102, 102, 102);
-    }
-
-    .notification span {font-weight: bolder; color: black;}
-    .notification span:hover {color: hsl(219, 85%, 26%); cursor: pointer;}
-
-    .time {color: rgba(185, 185, 185, 0.39);}
-  </style>
 </head>
 <body>
 
-  <div class="notification">
-    <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+  <div class="notification unread">
+    <img src="assets/images/avatar-kimberly-smith.webp" alt="" width="55px" height="55px">
     <div class="message">
 
-      <p><span class="username">Kimberly Smith</span> reacted to your recent post at <span>Truckers united</span></p>
+      <p><span class="username">Kimberly Smith</span> reacted to your recent post at <span>Truckers united</span>
+      <i class="fa fa-circle unreadIcon" aria-hidden="true" style="color: hsl(1, 90%, 64%); scale: 0.8; margin-left: 5px;"></i>
+      </p>
       <p class="time">1 min ago</p>
 
     </div>
