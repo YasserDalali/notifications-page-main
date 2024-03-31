@@ -12,6 +12,8 @@ body {
   padding: .6rem;
   background-color: hsl(210, 60%, 98%);
   align-items: center;
+  width: 75%;
+  margin: auto;
 }
 
 .notification p {
@@ -26,8 +28,7 @@ body {
   color: hsl(219, 85%, 26%);
   cursor: pointer;
 }
-.notification img {
-}
+
 .time {
   color: rgba(185, 185, 185, 0.39);
 }
@@ -35,3 +36,7 @@ body {
 .unread {
   background-color: hsl(205, 33%, 90%);
 }
+
+.notification i {display: none;}
+
+.notification.unread i {display: inline;}
