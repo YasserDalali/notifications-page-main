@@ -28,7 +28,7 @@ messages = [
     { username: "Rizky Hasanuddin", profile: "images/avatar-rizky-hasanuddin.webp" },
   ];
   
-  
+
   // Function to create a new notification
   function createNewNot() {
       // Play notification sound
@@ -94,8 +94,9 @@ messages = [
   function Delete() {
       var unread_msgs = []
       unread_msgs = document.getElementsByClassName("notification")
+
       for (let i = 0; i < unread_msgs.length; i++) {
-          document.removeChild(unread_msgs[i])
+          unread_msgs[i].style.display = 'none'
       }
   }
   

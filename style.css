@@ -6,6 +6,7 @@ body {
   background-color: rgb(255, 255, 255); /* Set the background color to white */
   font-family: Plus Jakarta Sans; /* Use the Plus Jakarta Sans font for the text */
 }
+h3 {cursor: pointer;}
 
 /** Styles for notification elements */
 .notification {
