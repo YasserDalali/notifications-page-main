@@ -1,0 +1,67 @@
+messages = [
+  {
+    id: 1,
+    message: "You have a new friend request from.",
+    timestamp: "5min ago",
+  },
+  {
+    id: 2,
+    message: "Your post has been liked by",
+    timestamp: "3min ago",
+  },
+  {
+    id: 3,
+    message: "You have a new message from",
+    timestamp: "1h ago",
+  },
+];
+
+users = [
+  { username: "Angela Gray", profile: "images/avatar-angela-gray.webp" },
+  { username: "Anna Kim", profile: "images/avatar-anna-kim.webp" },
+  { username: "Jacob Thompson", profile: "images/avatar-jacob-thompson.webp" },
+  { username: "Kimberly Smith", profile: "images/avatar-kimberly-smith.webp" },
+  { username: "Mark Webber", profile: "images/avatar-mark-webber.webp" },
+  { username: "Nathan Peterson",profile: "images/avatar-nathan-peterson.webp"},
+  { username: "Rizky Hasanuddin",profile: "images/avatar-rizky-hasanuddin.webp"},
+];
+
+
+function createNewNot() {
+    let rx = Number(Math.floor(Math.random()*7));
+
+    let username = document.createElement('span')
+    username.innerHTML= users[rx].username
+
+    let profile = document.createElement('img')
+    profile.src = users[rx].profile
+    profile.height = 55
+    profile.width = 55
+
+    
+    rx = Number(Math.floor(Math.random()*3));
+    
+    let message = document.createElement('p')
+    message.innerHTML = messages[rx].message
+    let timestamp = document.createElement('p')
+    timestamp.style.display = 'block'
+    timestamp.innerHTML = messages[rx].timestamp
+
+    let notification = document.createElement('div')
+    let unreaddot = '<i class="fa fa-circle" aria-hidden="true" style="color: hsl(1, 90%, 64%); scale: 0.8; margin-left: 5px;"></i>'
+
+    notification.classList.add('notification', 'unread')
+    timestamp.classList.add('date')
+    
+        message.appendChild(username)
+
+    let text = document.createElement('div')
+    text.innerHTML = message.outerHTML+timestamp.outerHTML
+    text.classList.add('message')
+
+    notification.innerHTML = `${profile.outerHTML} ${text.outerHTML}`
+
+
+
+    document.body.appendChild(notification);
+}

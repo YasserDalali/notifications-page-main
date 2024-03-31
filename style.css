@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
   font-family: Plus Jakarta Sans;
 }
 .notification {
-  display: flex;
-  margin: 10px 0;
-  border-radius: 15px;
   gap: 2rem;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 15px;
   padding: .6rem;
   background-color: hsl(210, 60%, 98%);
   align-items: center;
-  width: 75%;
-  margin: auto;
+  width: 65%;
+  margin: 30px auto;
 }
 
 .notification p {
