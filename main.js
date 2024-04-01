@@ -1,32 +1,25 @@
-// Array of notification messages
-messages = [
-    {
-      id: 1,
-      message: "You have a new friend request from ",
-      timestamp: "5min ago",
-    },
-    {
-      id: 2,
-      message: "Your post has been liked by ",
-      timestamp: "3min ago",
-    },
-    {
-      id: 3,
-      message: "You have a new message from ",
-      timestamp: "1h ago",
-    },
-  ];
-  
-  // Array of users with usernames and profile image paths
-  users = [
-    { username: "Angela Gray", profile: "images/avatar-angela-gray.webp" },
-    { username: "Anna Kim", profile: "images/avatar-anna-kim.webp" },
-    { username: "Jacob Thompson", profile: "images/avatar-jacob-thompson.webp" },
-    { username: "Kimberly Smith", profile: "images/avatar-kimberly-smith.webp" },
-    { username: "Mark Webber", profile: "images/avatar-mark-webber.webp" },
-    { username: "Nathan Peterson", profile: "images/avatar-nathan-peterson.webp" },
-    { username: "Rizky Hasanuddin", profile: "images/avatar-rizky-hasanuddin.webp" },
-  ];
+// AJAX REQUEST TO FETCH DB FROM JSON FILES
+var messages;
+var users;
+
+var mrq = new XMLHttpRequest();
+mrq.open('GET', 'messages.json')
+mrq.onload = function () { 
+  messages = JSON.parse(mrq.responseText)
+  console.log(messages)
+ }
+ mrq.send();
+
+ var urq = new XMLHttpRequest();
+urq.open('GET', 'users.json')
+urq.onload = function () { 
+  users = JSON.parse(urq.responseText)
+  console.log(users)
+ }
+ urq.send();
+
+
+
   
 
   // Function to create a new notification
