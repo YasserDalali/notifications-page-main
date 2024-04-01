@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "message": "You have a new friend request from ",
+      "timestamp": "5min ago"
+    },
+    {
+      "id": 2,
+      "message": "Your post has been liked by ",
+      "timestamp": "3min ago"
+    },
+    {
+      "id": 3,
+      "message": "You have a new message from ",
+      "timestamp": "1h ago"
+    }
+  ]
