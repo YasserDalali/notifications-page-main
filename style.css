@@ -12,6 +12,7 @@ h3 {cursor: pointer;}
 
 /** Styles for notification elements */
 .notification {
+  cursor: pointer;
 scale: 1.28; /* Scale the notification */
   gap: 2rem; /* Set the gap between elements */
   display: flex; /* Use flexbox for layout */
